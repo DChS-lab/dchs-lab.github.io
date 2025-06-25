@@ -1,0 +1,188 @@
+        html,body {
+          height: 100%;
+          overflow:auto;}
+        article.accordion{
+	        display: block;
+          height:100%;
+	        padding: 0px;
+	        margin: 0px;
+          width:100%;
+	        background-color: #666;
+          overflow:hidden;}
+        article.accordion section {
+	        display: inline-block;
+	        width:100%;
+	        height: 100%;
+	        background-color: #333;
+	        overflow: hidden;
+          -webkit-transition: all 1s ease;
+	        -moz-transition: all 1s ease;
+	        -ms-transition: all 1s ease;
+	        -o-transition: all 1s ease;
+	        transition: all 1s ease;}
+        article.accordion section h1 {
+	        font-weight: 300;
+	        line-height: 2em;
+	        padding: 0;
+	        margin-left: -100%;
+	        color: #fff;
+            text-shadow: 2px 2px 2px #000;
+          -webkit-transition: all 3s ease;
+	        -moz-transition: all 3s ease;
+	        -ms-transition: all 3s ease;
+	        -o-transition: all 3s ease;
+	        transition: all 3s ease;
+          font-family: 'Roboto Condensed', sans-serif;}
+
+        article.accordion section:target {
+          opacity:1;
+          -webkit-transition: all 3s ease;
+	        -moz-transition: all 3s ease;
+	        -ms-transition: all 3s ease;
+	        -o-transition: all 3s ease;
+	        transition: all 3s ease;}
+        article.accordion section:target .transbg {
+          opacity:1;
+          -webkit-transition: all 3s ease;
+	        -moz-transition: all 3s ease;
+	        -ms-transition: all 3s ease;
+	        -o-transition: all 3s ease;
+	        transition: all 3s ease;}
+       article.accordion section:target .texty {
+          opacity:1;
+          -webkit-transition: all 2s ease;
+	        -moz-transition: all 2s ease;
+	        -ms-transition: all 2s ease;
+	        -o-transition: all 2s ease;
+	        transition: all 2s ease;}
+        article.accordion section:target h1 {
+          -webkit-transition: all 2s ease;
+	        -moz-transition: all 2s ease;
+	        -ms-transition: all 2s ease;
+	        -o-transition: all 2s ease;
+	        transition: all 2s ease;fq
+            margin: 30px;}
+        .content {
+            margin:0px;
+            padding:0px;
+            /*position:fixed;
+            top:0px;
+            left:0px;*/
+            z-index:-1;
+            height:100%;
+          max-width:250%;
+            background-color:#222;}
+        #one {
+            background: #fff url('../img/drops.jpg') bottom;}
+        #two {
+            background: #fff url('../img/bana.gif') 70% 30%;}
+        #three {
+            background: #fff url('../img/game.gif') -1px 30%;}
+        #four {
+            background: #fff url('../img/blueprint-2.jpg');}
+        #five{
+            background: #00f;}
+.widget {
+margin-top:70px;
+  opacity:0.8;
+  margin-bottom:70px;}
+        .nav {
+            /*display:block;*/
+            position:fixed;
+            background: rgba(30,30,30,0.8);
+            top:0;
+            left:0;
+            height:32px;
+            width:100%;
+            opacity:0.96;
+            -moz-opacity:0.96;
+            z-index:999;
+            border-bottom:1px solid #000;
+        font-family: 'Roboto Condensed', sans-serif;}
+        .nav a{
+            display:inline-block;
+            height:100%;
+            text-align:center;
+            margin-left:-4px;
+            font-size:15px;
+            color: #ccc;
+            padding:10px;
+            padding-top:7px;
+            border-right:1px solid #000;}
+        .nav a:hover{
+            background:rgba(20,20,20,0.6);
+            text-decoration:none;
+            text-shadow: 0px 1px 0px #333;}
+      .transbg{
+            width:100%;
+            height:100%;
+            opacity:1;
+            /*position:fixed;*/
+            padding-top:20px;
+            z-index:0;
+      	    background: -moz-webkit-linear-gradient(left, rgba(0,0,0,0.8) , rgba(0,0,0,0.4));
+          background: linear-gradient(to right, rgba(0,0,0,0.8) , rgba(0,0,0,0.4));
+      -webkit-transition: all 2s ease;
+	        -moz-transition: all 2s ease;
+	        -ms-transition: all 2s ease;
+	        -o-transition: all 2s ease;
+            transition: all 2s ease;}
+      .texty{
+            font-size:24px;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight:300;
+            color:#fff;
+            opacity:0;
+            margin:-50px 50px;
+            text-shadow: 2px 2px 1px #000;
+                	-webkit-transition: all 1s ease;
+	        -moz-transition: all 1s ease;
+	        -ms-transition: all 1s ease;
+	        -o-transition: all 1s ease;
+            transition: all 1s ease;}
+      footer {
+            background:#ccc url('../img/graphy.png');
+            color:#222;
+            padding:40px;
+            min-height:240px;
+            display:block;
+            width:100%;
+            border-top:15px solid #222;
+          	-webkit-transition: all 1s ease;
+	        -moz-transition: all 1s ease;
+	        -ms-transition: all 1s ease;
+	        -o-transition: all 1s ease;
+            transition: all 1s ease;
+            box-shadow: -0px -2px 8px rgba(0,0,0,0.5);
+            -moz-opacity:0.9;
+            opacity:0.9;
+        z-index:5;
+      clear:both;}
+        .open{ display: block;
+            height:30px;
+            width:48px;
+            border-top-left-radius:40px;
+            border-top-right-radius:40px;
+            margin-top: -85px;
+            margin-bottom:30px;
+            text-shadow: 0px 1px 1px #4d4d4d;
+            background: #222 url('../img/broken_noise.png');
+	        color: #111;
+            padding:5px;
+            font-weight:bold;
+            font-size:25px;
+            text-align:center;
+            box-shadow: -0px -2px 8px rgba(0,0,0,0.5);}
+        footer:hover{margin-bottom:0px;
+      	    -webkit-transition: all 1s ease;
+	        -moz-transition: all 1s ease;
+	        -ms-transition: all 1s ease;
+	        -o-transition: all 1s ease;
+	        transition: all 1s ease;}
+        #footer .navi>li>a {
+            padding:3px;
+            color:#ccc;}
+
+        #footer .navi>li>a:hover {
+            background-color:transparent;
+            color:#555;}
